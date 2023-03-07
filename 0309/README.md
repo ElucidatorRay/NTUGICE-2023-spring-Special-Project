@@ -21,7 +21,7 @@ Other argument is for changing setting parameter of algorithm<br>
 
 ## Result
 ### problem 1
-<img src='./P1.jpg'>
+<img src='https://github.com/ElucidatorRay/NTUGICE-2023-spring-Special-Project/tree/main/0309/P1.jpg'>
 
 ### problem 2
-<img src='./P2.jpg'>
+<img src='https://github.com/ElucidatorRay/NTUGICE-2023-spring-Special-Project/tree/main/0309/P2.jpg'>
