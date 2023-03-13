@@ -174,13 +174,13 @@ def error(img1, img2, Type, mode='gray'):
     elif Type == 'SSIM':
         mu1 = img1.mean()
         mu2 = img2.mean()
-        sig1 = np.power(img1 - mu1, 2).sum()/H/W
-        sig2 = np.power(img2 - mu2, 2).sum()/H/W
+        sig1_s = np.power(img1 - mu1, 2).sum()/H/W
+        sig2_s = np.power(img2 - mu2, 2).sum()/H/W
         sig12 = ( (img1-mu1)*(img2-mu2) ).sum()/H/W
         L = 255
         c1, c2 = math.sqrt(1/255), math.sqrt(1/255)
         SSIM = (2*mu1*mu2 + (c1*L)**2)
         SSIM *= (2*sig12 + (c2*L)**2)
         SSIM /= (mu1**2 + mu2**2 + (c1*L)**2)
-        SSIM /= (sig1**2 + sig2**2 + (c2*L)**2)
+        SSIM /= (sig1_s + sig2_s + (c2*L)**2)
         return SSIM
